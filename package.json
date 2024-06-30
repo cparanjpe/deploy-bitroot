@@ -23,14 +23,23 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "ci=false react-scripts build",
-        "test": "ci=false react-scripts test",
+        "build": "GENERATE_SOURCEMAP=false react-scripts build",
+        "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
             "react-app",
             "react-app/jest"
+        ],
+        "rules": {
+          // Example: Ignore warnings for a specific rule
+          "no-unused-vars": "warn"
+        },
+        "ignorePatterns": [
+          // Example: Ignore specific files or directories
+          "build/",
+          "node_modules/"
         ]
     },
     "browserslist": {
