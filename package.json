@@ -33,12 +33,10 @@
       "react-app/jest"
     ],
     "rules": {
-      // Example: Ignore specific rules
-      "no-console": "off", // Disable 'no-console' rule
-      "no-unused-vars": "off" // Disable 'no-unused-vars' rule
+      "no-console": "off", 
+      "no-unused-vars": "off" 
     },
     "ignorePatterns": [
-      // Example: Ignore specific files or directories
       "build/",
       "node_modules/"
     ]
